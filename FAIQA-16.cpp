@@ -1,27 +1,35 @@
-#include <iostream>
-using namespace std;
-int sqr(int n);
+#include <iostream.h>
 
-int cube(int n);
+#include <conio.h>
 
-int main() {
+int gcd(int x, int y);
 
-int a, b, r;
-
-cout<<"Enter an integer: "; 
-cin>>a; cout<<"Enter an integer: ";
- cin>>b; r = sqr(a) + cube(b); 
- cout<<"Result = "<<r<<endl;
- }
-  int sqr(int n)
-   { return n*n;
-
-}
-
-int cube(int n)
+void main()
 
 {
 
-return n*n*n;
+int a, b;
+
+cout<<"Enter an integer: ";
+
+cin>>a;
+
+cout<<"Enter an integer: ";
+
+cin>>b;
+
+cout<<"Greatest common divisor is "<<gcd(a, b)<<endl;
+
+getch();
 
 }
+
+int gcd(int x, int y)
+
+{
+
+int g, i, n;
+
+if(x < y)
+
+n = x;
